@@ -1,0 +1,15 @@
+os: linux
+arch: s390x
+language: cpp
+compiler: gcc
+
+sudo: required
+
+before_script:
+  - mkdir build
+  - cd build
+  - cmake ..
+
+script:
+  - make
+  - ./endianness-test
