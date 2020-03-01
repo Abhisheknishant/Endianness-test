@@ -1,7 +1,13 @@
 os: linux
-arch: s390x
+arch:
+  - amd64
+  - ppc64le
+  - s390x
+  - arm64
 language: cpp
-compiler: gcc
+compiler:
+  - gcc
+  - clang
 
 sudo: required
 
